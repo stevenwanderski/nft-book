@@ -1,0 +1,23 @@
+<div id="faceoff" class="grid grid-cols-2">
+  <div>
+    <div class="mb-3">
+      <%= nft1.name %>
+    </div>
+
+    <%= form_tag(pages_update_path) do %>
+      <%= hidden_field_tag 'id', nft1.id %>
+      <button class="bg-blue-600 text-white px-4 py-2">Vote</button>
+    <% end %>
+  </div>
+
+  <div>
+    <div class="mb-3">
+      <%= nft2.name %>
+    </div>
+
+    <%= form_tag(pages_update_path) do %>
+      <%= hidden_field_tag 'id', nft2.id %>
+      <button class="bg-blue-600 text-white px-4 py-2">Vote</button>
+    <% end %>
+  </div>
+</div>

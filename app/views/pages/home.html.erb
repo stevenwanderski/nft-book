@@ -1,0 +1,10 @@
+<h1 class="text-4xl font-extrabold mb-4 text-center">NFT Book</h1>
+
+<div class="grid grid-cols-2 w-3/4 mx-auto">
+  <%= render 'pages/home/leaderboard', records: @leaderboard_nfts %>
+
+  <%= render 'pages/home/faceoff',
+      nft1: @nft1,
+      nft2: @nft2
+  %>
+</div>

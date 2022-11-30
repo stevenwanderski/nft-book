@@ -1,0 +1,12 @@
+<%= turbo_stream.replace 'leaderboard' do %>
+  <%= render 'pages/home/leaderboard',
+      records: @leaderboard_nfts
+  %>
+<% end %>
+
+<%= turbo_stream.replace 'faceoff' do %>
+  <%= render 'pages/home/faceoff',
+      nft1: @nft1,
+      nft2: @nft2
+  %>
+<% end %>
